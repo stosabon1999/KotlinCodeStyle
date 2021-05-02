@@ -6,6 +6,11 @@ import androidx.lifecycle.LifecycleRegistry
 import androidx.recyclerview.widget.RecyclerView
 import com.sobolevsky.kotlincodestyle.view.binders.ItemViewType
 
+/**
+ * Базовый вью холдер для [ItemViewType]
+ *
+ * @author Соболевский Станислав
+ */
 internal abstract class BaseViewHolder<ViewModel : ItemViewType, Payload : Any>(
     view: View
 ) : RecyclerView.ViewHolder(view) {

@@ -9,6 +9,13 @@ import com.sobolevsky.kotlincodestyle.view.factories.WeatherViewHolderFactory
 import com.sobolevsky.kotlincodestyle.view.payloads.WeatherPayload
 import com.sobolevsky.kotlincodestyle.view.viewholders.BaseViewHolder
 
+/**
+ * Адаптер  с данными о погоде.
+ *
+ * @param viewHolderFactory фабрика вью холдеров
+ *
+ * @author Соболевский Станислав
+ */
 internal class WeatherAdapter(private val viewHolderFactory: WeatherViewHolderFactory)
     : BaseListAdapter<ItemViewType, WeatherPayload, BaseViewHolder<ItemViewType, WeatherPayload>>(WeatherDiffUtilCallback()) {
 

@@ -2,6 +2,9 @@ package com.sobolevsky.kotlincodestyle.models
 
 import com.google.gson.annotations.SerializedName
 
+/**
+ * Серверная модель  с данными о погоде.
+ */
 data class WeatherCityResponse(
     val cod: String,
     val message: Float,

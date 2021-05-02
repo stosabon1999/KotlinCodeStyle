@@ -8,6 +8,14 @@ import com.sobolevsky.kotlincodestyle.models.domain.WeatherDomainItem
 import com.sobolevsky.kotlincodestyle.models.view.WeatherItemView
 import com.sobolevsky.kotlincodestyle.view.binders.ItemViewType
 
+/**
+ * Реализация [WeatherCityInteractor]
+ *
+ * @property weatherCityRepository репозиторий для получения данных по погоде
+ * @property converter             конвертер модели domain -> view
+ *
+ * @author Соболевский Станислав
+ */
 internal class WeatherCityInteractorImpl(
     private val weatherCityRepository: WeatherCityRepository,
     private val converter: OneWayConverter<WeatherDomainItem, List<WeatherItemView>>

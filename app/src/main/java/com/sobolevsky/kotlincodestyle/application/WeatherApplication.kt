@@ -7,6 +7,11 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
 import javax.inject.Inject
 
+/**
+ * Application. Инициализация даггер графа.
+ *
+ * @author Соболевский Станислав
+ */
 class WeatherApplication : Application(), HasActivityInjector {
     @Inject
     lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Activity>

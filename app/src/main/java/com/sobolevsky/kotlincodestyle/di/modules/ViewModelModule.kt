@@ -10,6 +10,11 @@ import dagger.Module
 import dagger.multibindings.IntoMap
 import kotlin.reflect.KClass
 
+/**
+ * Модуль для провайда ViewModel'ей
+ *
+ * @author Соболевский Станислав
+ */
 @Module
 internal abstract class ViewModelModule {
 

@@ -13,6 +13,11 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
+/**
+ * Модуль для работы с сетью.
+ *
+ * @author Соболевский Станислав
+ */
 @Module
 internal class NetworkModule {
 

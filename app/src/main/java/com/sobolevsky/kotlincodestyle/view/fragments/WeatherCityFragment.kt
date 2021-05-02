@@ -18,6 +18,11 @@ import com.sobolevsky.kotlincodestyle.view.factories.WeatherViewHolderFactoryImp
 import com.sobolevsky.kotlincodestyle.view.viewmodels.WeatherCityViewModel
 import javax.inject.Inject
 
+/**
+ * [Fragment] для отображения погоды
+
+ * @author Соболевский Станислав
+ */
 class WeatherCityFragment : Fragment(), Injectable {
 
     @Inject

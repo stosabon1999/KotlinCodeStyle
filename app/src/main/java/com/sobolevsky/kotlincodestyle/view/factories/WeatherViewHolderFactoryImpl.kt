@@ -13,7 +13,7 @@ import com.sobolevsky.kotlincodestyle.view.viewholders.WeatherViewHolder
 
 /**
  * Реализация для [WeatherViewHolderFactory].
- * Очевидно, что в данном кейса фабрика избыточна, реализована для демонстрации ситуации с несколькими View-Holder'ами
+ * Очевидно, что в данном кейсе фабрика избыточна, реализована для демонстрации ситуации с несколькими View-Holder'ами
  *
  * @author Соболевский Станислав
  */

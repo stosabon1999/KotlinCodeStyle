@@ -9,6 +9,11 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.HasSupportFragmentInjector
 import javax.inject.Inject
 
+/**
+ * Activity для отображения данных  о погоде.
+ *
+ * @author Соболевский Станислав
+ */
 class WeatherActivity : AppCompatActivity(), HasSupportFragmentInjector {
 
     @Inject

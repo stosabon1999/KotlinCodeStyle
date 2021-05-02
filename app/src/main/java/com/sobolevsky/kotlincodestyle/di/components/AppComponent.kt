@@ -9,6 +9,11 @@ import dagger.Component
 import dagger.android.AndroidInjectionModule
 import javax.inject.Singleton
 
+/**
+ * Главный Component.
+ *
+ * @author Соболевский Станислав.
+ */
 @Singleton
 @Component(
     modules = [

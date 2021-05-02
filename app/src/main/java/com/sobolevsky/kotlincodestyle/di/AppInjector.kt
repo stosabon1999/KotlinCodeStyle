@@ -13,6 +13,7 @@ import dagger.android.support.AndroidSupportInjection
 import dagger.android.support.HasSupportFragmentInjector
 
 object AppInjector {
+
     fun init(app: WeatherApplication) {
         DaggerAppComponent.builder()
             .application(app)

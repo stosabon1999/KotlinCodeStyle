@@ -28,10 +28,21 @@ internal class WeatherCityViewModel @Inject constructor() : ViewModel() {
     private val _isLoading = MutableLiveData<Boolean>()
     private val _serviceUnavailable = MutableLiveData<Unit>()
 
+    /**
+     * Данные по погоде.
+     */
     val weatherData: LiveData<List<ItemViewType>>
         get() = _weatherData
+
+    /**
+     * Состояние загрузки.
+     */
     val isLoading: LiveData<Boolean>
         get() = _isLoading
+
+    /**
+     * Состояние ошибки.
+     */
     val serviceUnavailable: LiveData<Unit>
         get() = _serviceUnavailable
 
@@ -40,6 +51,9 @@ internal class WeatherCityViewModel @Inject constructor() : ViewModel() {
         _isLoading.value = false
     }
 
+    /**
+     * Загрузка погодных данных.
+     */
     fun loadWeather() {
         _isLoading.value = true
         viewModelScope.launch(handler) {

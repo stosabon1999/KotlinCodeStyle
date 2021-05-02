@@ -9,8 +9,14 @@ import com.sobolevsky.kotlincodestyle.models.view.ItemType
  */
 internal interface ItemViewType {
 
+    /**
+     * Тип вью.
+     */
     val itemType: ItemType
 
+    /**
+     * Уникальный id
+     */
     fun getUniqueId(): String
 
 }

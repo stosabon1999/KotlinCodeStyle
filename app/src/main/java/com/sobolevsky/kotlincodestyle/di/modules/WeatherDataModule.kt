@@ -9,6 +9,11 @@ import com.sobolevsky.kotlincodestyle.domain.interactor.WeatherCityInteractorImp
 import dagger.Module
 import dagger.Provides
 
+/**
+ * Модуль для работы с данными.
+ *
+ * @author Соболевский Станислав.
+ */
 @Module
 internal class WeatherDataModule {
 

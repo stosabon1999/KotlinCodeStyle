@@ -6,6 +6,11 @@ import javax.inject.Inject
 import javax.inject.Provider
 import javax.inject.Singleton
 
+/**
+ * Фабрика для создания вью моделей.
+ *
+ * @author Соболевский Станислав
+ */
 @Singleton
 class ViewModelFactory @Inject constructor(
     private val creators: Map<Class<out ViewModel>, @JvmSuppressWildcards Provider<ViewModel>>

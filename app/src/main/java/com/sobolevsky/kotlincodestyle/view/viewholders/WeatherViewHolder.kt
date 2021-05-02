@@ -8,6 +8,8 @@ import com.sobolevsky.kotlincodestyle.view.payloads.WeatherPayload
 
 /**
  * Вью холдер для отображения данных по погоде.
+ *
+ * @author Соболевский Станислав
  */
 internal class WeatherViewHolder(
     view: View
@@ -23,6 +25,9 @@ internal class WeatherViewHolder(
         date.text = viewModel.date
     }
 
+    /**
+     * Payload здесь излишен и ничего полезного не несет, пригодился бы если вью имела несколько соостояний.
+     */
     override fun bind(viewModel: WeatherItemView, payload: WeatherPayload) {
         if (payload.changeData) {
             title.text = viewModel.title
